@@ -4530,6 +4530,16 @@ end)
 Setting:Toggle("Auto Click",false,function(value)
  _G.click = value
 end)
+spawn(function()
+	while wait(2) do
+		pcall(function()
+			if _G.Auto_Click then
+				game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("Click",true)
+				wait(7)
+			end
+		end)
+	end
+end)
 
 Setting:Toggle("Disabled Damage Text",_G.DisableDamage,function(value)
  _G.DisableDamage = value
