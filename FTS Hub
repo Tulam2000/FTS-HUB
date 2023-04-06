@@ -186,7 +186,7 @@ Logo.Image = "rbxassetid://12986011583"
 	Hub.Position = UDim2.new(0, 150, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = " Blox Fruit Update 18"
+	Hub.Text = " Blox Fruit UPD 18"
 	Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.TextSize = 14.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -3801,7 +3801,7 @@ end)
 
  
 --------------------------------------------------------------------
-local Library = Update:Window("FTS HUB ","")
+local Library = Update:Window("FTS X HUB ","")
 ------------------------------------------
 
 spawn(function()
