@@ -77,7 +77,7 @@ Start.BorderSizePixel = 0
 Start.Position = UDim2.new(0.7, 0, 0, 150)
 Start.Size = UDim2.new(0, 95, 0, 28)
 Start.Font = Enum.Font.Gotham
-Start.Text = "Excute script"
+Start.Text = "No key vesion"
 Start.TextColor3 = Color3.fromRGB(255, 255,255)
 Start.TextSize = 14.000
 Start.MouseButton1Click:Connect(function()
@@ -85,7 +85,7 @@ local SysemKeyyy = game.CoreGui:FindFirstChild("Loading")
 Main:TweenSize(UDim2.new(0,0,0,0),"Out","Quad",0.4,true)
 wait(0.4)
 SysemKeyyy:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tulam2000/FTS-HUB/main/FTS%20x%20Hub')))()"))()-- You Script' 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tulam2000/FTS-HUB/main/FTS%20x%20Hub')))()-- You Script' 
 end)
 
 UICorner2.CornerRadius = UDim.new(0, 10)
@@ -99,7 +99,7 @@ ButtonColor2.LineJoinMode = Enum.LineJoinMode.Round
 ButtonColor2.Color = _G.UIColor
 ButtonColor2.Transparency = 0.10
 
-GetKey.Name = "FTS X HUB"
+GetKey.Name = "Join my discord"
 GetKey.Parent = Main
 GetKey.BackgroundColor3 = Color3.fromRGB(20, 21, 22)
 GetKey.BorderSizePixel = 0
@@ -132,6 +132,20 @@ Bar.BackgroundColor3 = _G.UIColor
 Bar.Position = UDim2.new(0, 0, 0, 137)
 Bar.Size = UDim2.new(0, 400, 0, 5)
 
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.fromRGB(20, 21, 22)
+TextBox.BorderSizePixel = 0
+TextBox.ClipsDescendants = true
+TextBox.Position = UDim2.new(0.29, 0, 0, 55)
+TextBox.Size = UDim2.new(0, 155, 0, 45)
+TextBox.ZIndex = 99
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Gotham
+TextBox.PlaceholderColor3 = Color3.fromRGB(20, 21, 22)
+TextBox.PlaceholderText = ""
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255,255,255)
+TextBox.TextSize = 12.000
 
 ButtonColor4.Thickness = 3.2
 ButtonColor4.Name = ""
@@ -145,7 +159,7 @@ UICorner3.CornerRadius = UDim.new(0, 5)
 UICorner3.Parent = TextBox
 
 local SysemKey = {
-    "FTS_HUB"
+    "NoKey"
 }
 TextBox.FocusLost:Connect(function()
 LoadingScript(TextBox.Text)
