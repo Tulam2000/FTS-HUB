@@ -4258,16 +4258,8 @@ spawn(function()
   end)
  end)
 
-Setting:Toggle("Anti AFK: Work")
- local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-   wait(1)
-   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
-
-if _G.HideUi then
-	game:GetService("VirtualInputManager"):SendKeyEvent(true,"RightControl",false,game)
+Setting:Toggle("Anti AFK",true,function(value)
+ _G.AFK = value
  end)
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
